@@ -30,7 +30,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
     onboardingPages = _listData.getOnboardingPages();
   }
 
-  bool _isButtonPressedNext = false;
+  bool _isButtonPressedNext =false;
   void _nextPage() {
     if (_currentIndex < onboardingPages.length - 1) {
       _controller.nextPage(
