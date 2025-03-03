@@ -7,4 +7,6 @@ class Routers{
 
   static RouterApp onboardingScreen=RouterApp(name: "/onboardingScreen", path: "/onboardingScreen");
 
+  static RouterApp letsScreen=RouterApp(name: "/letsScreen", path: "/letsScreen");
+
 }

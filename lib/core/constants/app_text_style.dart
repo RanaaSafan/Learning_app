@@ -15,5 +15,10 @@ class AppTextStyle {
       fontSize: AppSize.desOnboarding,
       fontWeight: AppFont.desOnboarding);
 
+  static TextStyle nextButtonStyle = TextStyle(
+      color: AppColor.white,
+      fontSize: AppSize.sizeButton,
+      fontWeight: AppFont.desOnboarding);
+
 
 }

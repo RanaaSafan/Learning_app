@@ -1,4 +1,5 @@
 import 'package:education_app/core/router/routers.dart';
+import 'package:education_app/features/authentication/representation/screens/lets_screen.dart';
 import 'package:education_app/features/splash/presentation/screens/onboading_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -24,4 +25,14 @@ final router = GoRouter(
         },
       ),
 
-]);
+      GoRoute(
+        path: Routers.letsScreen.path,
+        name: Routers.letsScreen.name,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: LetsScreen());
+        },
+      ),
+
+
+
+    ]);
