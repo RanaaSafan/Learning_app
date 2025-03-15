@@ -21,4 +21,12 @@ class AppTextStyle {
       fontWeight: AppFont.desOnboarding);
 
 
+  static TextStyle forgetStyle = TextStyle(
+      color: AppColor.titleOnboarding,
+      fontSize: AppSize.desOnboarding,
+      fontWeight: AppFont.forget
+
+  );
+
+
 }

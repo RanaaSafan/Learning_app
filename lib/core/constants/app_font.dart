@@ -7,4 +7,6 @@ class AppFont{
 
   static const FontWeight desOnboarding=FontWeight.bold;
 
+  static const FontWeight forget=FontWeight.w800;
+
 }

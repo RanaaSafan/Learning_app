@@ -9,4 +9,11 @@ class Routers{
 
   static RouterApp letsScreen=RouterApp(name: "/letsScreen", path: "/letsScreen");
 
+  static RouterApp signUpScreen=RouterApp(name: "/signUpScreen", path: "/signUpScreen");
+
+  static RouterApp signInScreen=RouterApp(name: "/signInScreen", path: "/signInScreen");
+
+  static RouterApp HomeScreen=RouterApp(name: "/HomeScreen", path: "/HomeScreen");
+  static RouterApp forgetScreen=RouterApp(name: "/forgetScreen", path: "/forgetScreen");
+
 }

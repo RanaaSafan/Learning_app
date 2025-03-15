@@ -21,7 +21,6 @@ class _OnboardingBodyState extends State<OnboardingBody> {
   final OnboardingData _listData = OnboardingData();
   late List<OnboardingModel> onboardingPages;
 
-
   final PageController _controller = PageController();
   int _currentIndex = 0;
 
@@ -39,7 +38,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
         curve: Curves.easeOut,
       );
     } else {
-     GoRouter.of(context).push(Routers.letsScreen.name);
+      GoRouter.of(context).push(Routers.letsScreen.name);
     }
   }
 
@@ -64,7 +63,8 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                       children: [
                         InkWell(
                             onTap: () {
-                              GoRouter.of(context).push(Routers.letsScreen.name);
+                              GoRouter.of(context)
+                                  .push(Routers.letsScreen.name);
                             },
                             child: Text(
                               "Skip",
@@ -99,7 +99,6 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                           textAlign: TextAlign.center,
                           style: AppTextStyle.desOnboardingStyle,
                         ),
-
                       ],
                     ),
                   ),
@@ -114,15 +113,23 @@ class _OnboardingBodyState extends State<OnboardingBody> {
                           _nextPage();
                         },
                         child: _currentIndex == onboardingPages.length - 1
-                            ? const NextButton(title: 'Get Start', buttonWidth: 200,)
+                            ? NextButton(
+                                title: 'Get Start',
+                                buttonWidth: 200,
+                                onPressed: () {
+                                  GoRouter.of(context)
+                                      .push(Routers.letsScreen.name);
+                                },
+                              )
                             : AppIcons.buttonIcon),
                   ),
                 ],
               );
             },
           ),
-          OnboardingIndicator(currentIndex: _currentIndex,),
-
+          OnboardingIndicator(
+            currentIndex: _currentIndex,
+          ),
         ],
       ),
     );
