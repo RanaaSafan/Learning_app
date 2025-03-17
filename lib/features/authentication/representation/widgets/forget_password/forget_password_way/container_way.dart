@@ -2,9 +2,11 @@ import 'package:education_app/core/constants/app_padding.dart';
 import 'package:education_app/core/constants/app_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/constants/app_color.dart';
 import '../../../../../../core/constants/app_sized_box.dart';
+import '../../../../../../core/router/routers.dart';
 
 class ContainerWay extends StatelessWidget {
   final String title;
@@ -17,7 +19,7 @@ class ContainerWay extends StatelessWidget {
       padding: AppPadding.padding16,
       child: InkWell(
         onTap: (){
-
+         GoRouter.of(context).push(Routers.verfiyForgetScreen.name);
         },
         child: Container(
           width: double.infinity,

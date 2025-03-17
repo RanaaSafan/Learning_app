@@ -15,5 +15,8 @@ class Routers{
 
   static RouterApp HomeScreen=RouterApp(name: "/HomeScreen", path: "/HomeScreen");
   static RouterApp forgetScreen=RouterApp(name: "/forgetScreen", path: "/forgetScreen");
+  static RouterApp verfiyForgetScreen=RouterApp(name: "/verfiyForgetScreen", path: "/verfiyForgetScreen");
+
+  static RouterApp newPasswordScreen=RouterApp(name: "/newPasswordScreen", path: "/newPasswordScreen");
 
 }

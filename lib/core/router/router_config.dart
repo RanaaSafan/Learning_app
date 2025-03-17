@@ -1,7 +1,9 @@
 import 'package:education_app/core/router/routers.dart';
 import 'package:education_app/features/authentication/representation/screens/forget_password_way_screen.dart';
 import 'package:education_app/features/authentication/representation/screens/lets_screen.dart';
+import 'package:education_app/features/authentication/representation/screens/new_password_screen.dart';
 import 'package:education_app/features/authentication/representation/screens/sign_up_screen.dart';
+import 'package:education_app/features/authentication/representation/screens/verfiy_password_screen.dart';
 import 'package:education_app/features/splash/presentation/screens/onboading_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -68,6 +70,22 @@ final router = GoRouter(
         },
       ),
 
+
+      GoRoute(
+        path: Routers.verfiyForgetScreen.path,
+        name: Routers.verfiyForgetScreen.name,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: VerfiyPasswordScreen());
+        },
+      ),
+
+      GoRoute(
+        path: Routers.newPasswordScreen.path,
+        name: Routers.newPasswordScreen.name,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: NewPasswordScreen());
+        },
+      ),
 
 
     ]);
