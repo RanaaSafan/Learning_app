@@ -12,4 +12,5 @@ class AppColor{
   static const backApp=Color(0xFFF5F9FF);
   static const white=Color(0xFFFFFFFF);
   static const green =Color(0xFF10A711);
+  static var grey =Colors.grey[300];
 }

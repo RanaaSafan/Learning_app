@@ -4,7 +4,7 @@ import 'package:education_app/core/constants/app_sized_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../custom_text_field.dart';
+import '../../../../../../core/widgets/custom_text_field.dart';
 
 
 class NewPasswordBody extends StatefulWidget {

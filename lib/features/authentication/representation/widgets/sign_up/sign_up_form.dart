@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:education_app/core/router/routers.dart';
 import 'package:education_app/core/widgets/next_button.dart';
 import 'package:education_app/core/constants/app_sized_box.dart';
-import 'package:education_app/features/authentication/representation/widgets/custom_text_field.dart';
+import 'package:education_app/core/widgets/custom_text_field.dart';
 class SignUpForm extends StatefulWidget {
   const SignUpForm({super.key});
 
@@ -74,11 +74,11 @@ class _SignUpFormState extends State<SignUpForm> {
       keyboardType: TextInputType.emailAddress,
       focusNode: emailNode,
       validator: (value) {
-        if (value == null || value.isEmpty) {
-          return "Please enter your email";
+        if (value!.trim().isEmpty) {
+          return "Email is required";
         }
-        if (!_isValidEmail(value)) {
-          return "Please enter a valid email";
+        if (!_isValidEmail(value.trim())) {
+          return "Email is not valid email";
         }
         return null;
       },
@@ -93,10 +93,10 @@ class _SignUpFormState extends State<SignUpForm> {
       focusNode: passwordNode,
       keyboardType: TextInputType.visiblePassword,
       validator: (value) {
-        if (value == null || value.isEmpty) {
-          return "Please enter a password";
+        if (value!.trim().isEmpty) {
+          return "Password is required";
         }
-        if (!_isValidPassword(value)) {
+        if (!_isValidPassword(value.trim())) {
           return "Password must be at least 6 characters";
         }
         return null;

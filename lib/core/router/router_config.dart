@@ -13,7 +13,7 @@ import '../../features/home/presentation/screens/home_screen.dart';
 import '../../features/splash/presentation/screens/splash_screen.dart';
 
 final router = GoRouter(
-    initialLocation: Routers.splashScreen.path,
+    initialLocation: Routers.HomeScreen.path,
     routes: [
   GoRoute(
     path: Routers.splashScreen.path,
