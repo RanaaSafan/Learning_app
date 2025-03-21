@@ -4,6 +4,7 @@ import 'package:education_app/features/authentication/representation/screens/let
 import 'package:education_app/features/authentication/representation/screens/new_password_screen.dart';
 import 'package:education_app/features/authentication/representation/screens/sign_up_screen.dart';
 import 'package:education_app/features/authentication/representation/screens/verfiy_password_screen.dart';
+import 'package:education_app/features/home/presentation/screens/categories_screen.dart';
 import 'package:education_app/features/splash/presentation/screens/onboading_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -84,6 +85,14 @@ final router = GoRouter(
         name: Routers.newPasswordScreen.name,
         pageBuilder: (context, state) {
           return const MaterialPage(child: NewPasswordScreen());
+        },
+      ),
+
+      GoRoute(
+        path: Routers.categoriesScreen.path,
+        name: Routers.categoriesScreen.name,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: CategoriesScreen());
         },
       ),
 

@@ -1,16 +1,16 @@
 import 'package:education_app/core/constants/app_color.dart';
 import 'package:flutter/material.dart';
 
-class ChipWidget extends StatefulWidget {
+class CoursesWidget extends StatefulWidget {
   final List<String> chipLabels; // تمرير قائمة النصوص من الـ parent
 
-  const ChipWidget({super.key, required this.chipLabels});
+  const CoursesWidget({super.key, required this.chipLabels});
 
   @override
-  _ChipWidgetState createState() => _ChipWidgetState();
+  _CoursesWidgetState createState() => _CoursesWidgetState();
 }
 
-class _ChipWidgetState extends State<ChipWidget> {
+class _CoursesWidgetState extends State<CoursesWidget> {
   int? _selectedIndex;
 
   // دالة لتحديث القيمة عند الضغط على Chip

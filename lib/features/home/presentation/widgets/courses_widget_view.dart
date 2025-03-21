@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'chip_widget.dart';
+import 'courses_widget.dart';
 
-class ChipWidgetView extends StatelessWidget {
-  const ChipWidgetView({super.key});
+class CoursesWidgetView extends StatelessWidget {
+  const CoursesWidgetView({super.key});
 
   // popular courses
   @override
@@ -23,7 +23,7 @@ class ChipWidgetView extends StatelessWidget {
 
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal, // تمكين التمرير الأفقي
-      child:ChipWidget(chipLabels: chipLabels), // تمرير البيانات إلى الـ ChipWidget
+      child:CoursesWidget(chipLabels: chipLabels), // تمرير البيانات إلى الـ ChipWidget
     );
   }
 }

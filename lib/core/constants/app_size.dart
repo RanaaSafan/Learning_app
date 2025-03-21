@@ -8,4 +8,5 @@ class AppSize{
   static double imageWidth=500.sp;
   static double sizeButton=14.sp;
 
+
 }

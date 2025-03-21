@@ -19,4 +19,6 @@ class Routers{
 
   static RouterApp newPasswordScreen=RouterApp(name: "/newPasswordScreen", path: "/newPasswordScreen");
 
+  static RouterApp categoriesScreen=RouterApp(name: "/categoriesScreen", path: "/categoriesScreen");
+
 }
